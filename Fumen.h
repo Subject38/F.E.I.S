@@ -6,6 +6,7 @@
 #define FEIS_FUMEN_H
 
 #include <iostream>
+#include <string>
 #include <map>
 #include <set>
 #include <fstream>

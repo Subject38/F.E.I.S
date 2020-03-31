@@ -6,6 +6,7 @@
 #define FEIS_EDITORSTATE_H
 
 #include <optional>
+#include <string>
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include "Fumen.h"

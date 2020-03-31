@@ -57,7 +57,7 @@ public:
     );
 
 private:
-    std::__cxx11::string texture_path = "assets/textures/edit_textures/game_front_edit_tex_1.tex.png";
+    std::string texture_path = "assets/textures/edit_textures/game_front_edit_tex_1.tex.png";
 };
 
 #endif //FEIS_PLAYFIELD_H

@@ -6,6 +6,7 @@
 #define FEIS_CHART_H
 
 #include <iostream>
+#include <string>
 #include <set>
 #include <vector>
 #include "Note.h"

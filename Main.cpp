@@ -3,6 +3,7 @@
 #include <imgui-SFML.h>
 #include <imgui_stdlib.h>
 #include <variant>
+#include <string>
 #include "EditorState.h"
 #include "tinyfiledialogs.h"
 #include "NotificationsQueue.h"
@@ -39,7 +40,8 @@ int main(int argc, char** argv) {
     for (const auto& folder : std::filesystem::directory_iterator("assets/textures/markers")) {
         if (folder.is_directory()) {
             sf::Texture markerPreview;
-            markerPreview.loadFromFile((folder/"ma15.png").string());
+            auto& path = folder.path();
+            markerPreview.loadFromFile((path/"ma15.png").string());
             markerPreview.setSmooth(true);
             markerPreviews.insert({folder,markerPreview});
         }

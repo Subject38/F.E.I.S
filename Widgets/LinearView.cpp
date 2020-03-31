@@ -90,7 +90,7 @@ void LinearView::update(const std::optional<Chart_with_History>& chart, const sf
 				view.draw(beat_line);
 
 
-				ss.str(std::__cxx11::string());
+				ss.str(std::string());
 				ss << next_beat/4;
 				beat_number.setString(ss.str());
 				sf::FloatRect textRect = beat_number.getLocalBounds();
