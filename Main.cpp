@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
 
     ImGuiIO& IO = ImGui::GetIO();
     IO.Fonts->Clear();
-    IO.Fonts->AddFontFromFileTTF("assets/fonts/NotoSans-Medium.ttf", 16.f);
+    IO.Fonts->AddFontFromFileTTF("assets/fonts/MPLUS1p-Medium.ttf", 16.f, NULL, IO.Fonts->GetGlyphRangesJapanese());
     ImGui::SFML::UpdateFontTexture();
 
     SoundEffect beatTick("sound beat tick.wav");
@@ -64,7 +64,6 @@ int main(int argc, char** argv) {
         sf::Event event;
         while (window.pollEvent(event)) {
             ImGui::SFML::ProcessEvent(event);
-
             switch (event.type) {
                 case sf::Event::Closed:
                     preferences.save();
@@ -340,6 +339,10 @@ int main(int argc, char** argv) {
                         default:
                             break;
                     }
+                    break;
+                // hard code joystick support
+                case sf::Event::JoystickButtonPressed:
+                    editorState->toggleNoteAtCurrentTime(event.joystickButton.button);
                     break;
                 default:
                     break;

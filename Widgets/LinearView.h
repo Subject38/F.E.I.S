@@ -65,7 +65,7 @@ private:
     void reloadTransforms(const sf::Time &playbackPosition, const float &ticksAtPlaybackPosition, const float &BPM, const int &resolution);
 
     int zoom = 0;
-    const std::string font_path = "assets/fonts/NotoSans-Medium.ttf";
+    const std::string font_path = "assets/fonts/MPLUS1p-Medium.ttf";
 };
 
 #endif //FEIS_LINEARVIEW_H

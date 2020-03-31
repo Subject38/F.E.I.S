@@ -103,6 +103,7 @@ public:
     bool showHistory;
     bool showSoundSettings;
     bool showLinearView;
+    bool showControllerBindings;
 
     void displayPlayfield(Marker& marker, MarkerEndingState markerEndingState);
     void displayProperties();

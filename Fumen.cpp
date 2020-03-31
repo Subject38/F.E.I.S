@@ -76,6 +76,7 @@ void Fumen::loadFromMemon_v0_1_0(nlohmann::json memon) {
 		this->Charts.insert(std::pair<std::string,Chart>(chart.dif_name,chart));
 	}
 
+
 }
 
 /*
