@@ -420,7 +420,7 @@ int main(int argc, char** argv) {
             window.clear(sf::Color(0, 0, 0));
 
             if (editorState->showHistory) {
-                editorState->chart->history.display(print_history_message);
+                editorState->chart->history.display(get_message);
             }
             if (editorState->showPlayfield) {
                 editorState->displayPlayfield(marker,markerEndingState);
