@@ -59,11 +59,7 @@ public:
     );
 
 private:
-<<<<<<< HEAD
-    std::string texture_path = "assets/textures/edit_textures/game_front_edit_tex_1.tex.png";
-=======
     const std::string texture_path = "assets/textures/edit_textures/game_front_edit_tex_1.tex.png";
->>>>>>> 1e29f898c5716cd20b2f04cc317b660a3784bfa1
 };
 
 #endif //FEIS_PLAYFIELD_H
