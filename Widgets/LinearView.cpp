@@ -89,7 +89,10 @@ void LinearView::update(const std::optional<Chart_with_History>& chart, const sf
 				beat_line.setPosition({50.f,next_beat_line_y});
 				view.draw(beat_line);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1e29f898c5716cd20b2f04cc317b660a3784bfa1
 				ss.str(std::string());
 				ss << next_beat/4;
 				beat_number.setString(ss.str());

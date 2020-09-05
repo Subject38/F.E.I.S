@@ -4,6 +4,8 @@
 
 #include "BlankScreen.h"
 
+#include <string>
+
 BlankScreen::BlankScreen() : gris_de_fond(sf::Color(38, 38, 38)) {
 
 	if(!tex_FEIS_logo.loadFromFile("assets/textures/FEIS_logo.png"))

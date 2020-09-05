@@ -11,6 +11,8 @@
 #include "../Chart.h"
 #include <string>
 
+#include <string>
+
 
 class DensityGraph {
 

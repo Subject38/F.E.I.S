@@ -40,8 +40,12 @@ int main(int argc, char** argv) {
     for (const auto& folder : std::filesystem::directory_iterator("assets/textures/markers")) {
         if (folder.is_directory()) {
             sf::Texture markerPreview;
+<<<<<<< HEAD
             auto& path = folder.path();
             markerPreview.loadFromFile((path/"ma15.png").string());
+=======
+            markerPreview.loadFromFile((folder.path()/"ma15.png").string());
+>>>>>>> 1e29f898c5716cd20b2f04cc317b660a3784bfa1
             markerPreview.setSmooth(true);
             markerPreviews.insert({folder,markerPreview});
         }
